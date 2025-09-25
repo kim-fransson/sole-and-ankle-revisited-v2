@@ -10,13 +10,6 @@ import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
 
 const Header = () => {
-  const [showMobileMenu, setShowMobileMenu] = React.useState(false);
-
-  // For our mobile hamburger menu, we'll want to use a button
-  // with an onClick handler, something like this:
-  //
-  // <button onClick={() => setShowMobileMenu(true)}>
-
   return (
     <header>
       <SuperHeader />
@@ -42,18 +35,10 @@ const Header = () => {
 
             <Icon id='search' />
           </ActionButton>
-          <ActionButton>
-            <VisuallyHidden>Toggle menu</VisuallyHidden>
-            <Icon id='menu' />
-          </ActionButton>
+          <MobileMenu />
         </MobileActions>
         <Filler />
       </MainHeader>
-
-      <MobileMenu
-        isOpen={showMobileMenu}
-        onDismiss={() => setShowMobileMenu(false)}
-      />
     </header>
   );
 };
