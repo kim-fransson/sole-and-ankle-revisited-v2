@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { COLORS, WEIGHTS } from '../../constants';
+import { COLORS, QUERIES, WEIGHTS } from "../../constants";
 
-import Icon from '../Icon';
+import Icon from "../Icon";
 
 const Select = ({ label, value, children, ...delegated }) => {
   const childArray = React.Children.toArray(children);
@@ -23,7 +23,7 @@ const Select = ({ label, value, children, ...delegated }) => {
         <DisplayedBit>
           {displayedValue}
           <ChevronIcon
-            id="chevron-down"
+            id='chevron-down'
             size={24}
             strokeWidth={1.5}
           />
