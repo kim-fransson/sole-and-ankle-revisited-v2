@@ -54,7 +54,7 @@ const MobileMenu = () => {
 };
 
 const Overlay = styled(Dialog.Overlay)`
-  background: hsla(220, 5%, 40%, 0.8);
+  background: var(--color-backdrop);
   position: fixed;
   inset: 0;
 `;
