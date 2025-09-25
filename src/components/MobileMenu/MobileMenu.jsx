@@ -67,7 +67,7 @@ const Content = styled(Dialog.Content)`
   top: 0;
   bottom: 0;
   right: 0;
-  background: ${COLORS.white};
+  background: var(--color-white);
   width: ${300 / 16}rem;
   padding: 32px;
 `;
@@ -89,11 +89,11 @@ const NavLink = styled.a`
   text-transform: uppercase;
   font-weight: ${WEIGHTS.medium};
   font-size: ${18 / 16}rem;
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   text-decoration: none;
 
   &:first-child {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
@@ -112,7 +112,7 @@ const Filler = styled.div`
 const FooterLink = styled.a`
   font-weight: ${WEIGHTS.medium};
   font-size: ${14 / 16}rem;
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   text-decoration: none;
 `;
 
